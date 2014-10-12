@@ -13,6 +13,7 @@ do
   echo ../../kconfigreader/run.sh de.fosd.typechef.kconfig.KConfigReader --writeDimacs --writeNonBoolean --writeCompletedConf --dumpconf $dumpconf arch/$arch/Kconfig $thisdir/pcs/$arch
   ../../kconfigreader/run.sh de.fosd.typechef.kconfig.KConfigReader --writeDimacs --writeNonBoolean --writeCompletedConf --dumpconf $dumpconf arch/$arch/Kconfig $thisdir/pcs/$arch
   wc -l $thisdir/pcs/$arch.model
+  exit 
 done
 
 cd $thisdir
